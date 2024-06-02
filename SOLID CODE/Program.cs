@@ -105,3 +105,13 @@ emailNotification.Notify("Hello, Dependency Inversion Principle!");
 IMessageService smsService = new SmsService();
 Notification2 smsNotification = new Notification2(smsService);
 smsNotification.Notify("Hello, Dependency Inversion Principle via SMS!");
+Console.WriteLine("");
+
+StaticExample example = new StaticExample(5, 10);
+StaticExample example2 = new StaticExample(15, 20);
+StaticExample example3 = new StaticExample(25, 30);
+Console.WriteLine(StaticExample.count);
+
+StaticExample.Cikarma(20,5);
+example2.Toplama(15,10);
+
